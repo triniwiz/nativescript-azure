@@ -1,17 +1,17 @@
 import {Observable} from 'data/observable';
-import * as nsPlugin from 'nativescript-yourplugin';
+import * as nsPlugin from 'nativescript-azure';
 
 export class HelloWorldModel extends Observable {
   public message: string;
-  private yourPlugin: nsPlugin.YourPlugin;
+  private azurePlugin: nsPlugin.azure;
 
   public Click = nsPlugin.Click;
 
   constructor() {
     super();
 
-    this.yourPlugin = new nsPlugin.YourPlugin();
-    this.message = this.yourPlugin.message;
-    this.Click = this.yourPlugin.Click;
+    this.azurePlugin = new nsPlugin.AzurePlugin();
+    this.message = this.azurePlugin.message;
+    this.Click = this.azurePlugin.Click;
   }
 }

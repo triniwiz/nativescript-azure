@@ -8,9 +8,9 @@
     },
     "files": [
       "demo/node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "yourplugin.common.ts",
-      "yourplugin.android.ts", 
-      "yourplugin.ios.ts"
+      "azure.common.ts",
+      "azure.android.ts", 
+      "azure.ios.ts"
     ],
     "compileOnSave": false
 }

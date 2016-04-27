@@ -24,4 +24,4 @@ var Utils = (function () {
     return Utils;
 }());
 exports.Utils = Utils;
-//# sourceMappingURL=yourplugin.common.js.map
+//# sourceMappingURL=azure.common.js.map

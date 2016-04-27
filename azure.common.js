@@ -7,10 +7,17 @@ var Common = (function () {
     }
     Common.prototype.Click = function () {
         console.log("Clicked");
+        Client("www.gas-sense-personal.azurewebsites.net");
     };
     return Common;
 }());
 exports.Common = Common;
+function Client(url) {
+    console.log("here");
+    mClient(url);
+    console.log("common - clinet()");
+}
+exports.Client = Client;
 var Utils = (function () {
     function Utils() {
     }

@@ -1,3 +1,4 @@
+/// <reference path="./platformAPI.d.ts"/>
 import * as app from 'application';
 import * as dialogs from 'ui/dialogs';
 
@@ -13,10 +14,16 @@ export class Common {
       //var client = MSClient("whateverThisIs");
       //var table = client.tableWithName("TodoItem")
       console.log("Clicked");
+      Client("www.gas-sense-personal.azurewebsites.net");
   }
-
 }
 
+  export function Client(url: string){
+    console.log("here");
+    mClient(url);
+    console.log("common - clinet()");
+  }
+  
 export class Utils {
   public static SUCCESS_MSG(): string {
     let msg = `Your plugin is working on ${app.android ? 'Android' : 'iOS'}.`;
